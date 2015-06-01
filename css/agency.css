@@ -331,11 +331,11 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 18px;
+/*    font-style: italic;*/
     font-weight: 400;
 }
 
@@ -627,23 +627,24 @@ section h3.section-subheading {
     }
 }
 
-.team-member {
+.core-obj {
     margin-bottom: 50px;
     text-align: center;
 }
 
-.team-member img {
+.core-obj img {
     margin: 0 auto;
     border: 7px solid #fff;
+    width: 80%; 
 }
 
-.team-member h4 {
+.core-obj h4 {
     margin-top: 25px;
     margin-bottom: 0;
     text-transform: none;
 }
 
-.team-member p {
+.core-obj p {
     margin-top: 0;
 }
 
