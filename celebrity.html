@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>WWW - Historical Figure</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,19 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
 
+    $(document).ready(function(){
+
+            $("a.celebrity-link").hover(function(){
+                $("a.celebrity-link:hover").next().fadeIn();
+            },function(){
+                $("a.celebrity-link").next().fadeOut();
+            });
+
+    });  
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -56,10 +68,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#celebrity">Celebrity</a>
+                        <a class="page-scroll" href="home.html">首頁</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="timeline.html">時間軸</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="celebrity.html">歷史人物</a>
                     </li>
                 </ul>
             </div>
@@ -73,139 +88,163 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Celebrity</h2>
+                    <h3 class="section-subheading text-muted">第一次世界大戰歷史人物</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
+            <div class="row celebrity-map">
+                <div class="col-md-12 europe-map">
+                    <img src="img/WWWMAP-01.png" class="img-responsive" alt="">
+                </div>
+                <!-- Celebrity 1 -->
+                <div class=" celebrity-item celebrity-item-1">
+                    <a href="#celebrityModal1" class="celebrity-link celebrity-link-1" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/4/4d/Woodrow_Wilson-H%26E.jpg" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
+                    <div class="celebrity-caption celebrity-caption-1">
+                        <h4>伍德羅·威爾遜<br>Woodrow Wilson</h4>
+                        <p class="text-muted">美國</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
+                <!-- Celebrity 2 -->
+                <div class="celebrity-item celebrity-item-2">
+                    <a href="#celebrityModal2" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <img src="http://theunion4ever.com/wp-content/uploads/2015/04/Winston-Churchill-2-2.jpg" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="celebrity-caption celebrity-caption-2">
+                        <h4>溫斯頓·邱吉爾<br>Winston Churchill</h4>
+                        <p class="text-muted">英國</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
+                <!-- Celebrity 3 -->
+                <div class="celebrity-item celebrity-item-3">
+                    <a href="#celebrityModal3" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <img src="http://cdn.history.com/sites/2/2013/12/emperor-nicholas-ii-of-russia.jpg" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="celebrity-caption celebrity-caption-3">
+                        <h4>尼古拉二世<br>Tsar Nicholas II</h4>
+                        <p class="text-muted">俄國</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
+                <!-- Celebrity 4 -->
+                <div class="celebrity-item celebrity-item-4">
+                    <a href="#celebrityModal4" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                        <img src="http://www.larousse.fr/encyclopedie/data/images/1313133-Georges_Clemenceau.jpg" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="celebrity-caption celebrity-caption-4">
+                        <h4>喬治·克里蒙梭<br>Georges Clemenceau</h4>
+                        <p class="text-muted">法國</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
+                <!-- Celebrity 5 -->
+                <div class="celebrity-item celebrity-item-5">
+                    <a href="#celebrityModal5" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/6/6e/Kaiser_Wilhelm_II_of_Germany_-_1902.jpg" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="celebrity-caption celebrity-caption-5">
+                        <h4>威廉二世<br>Kaiser Wilhelm II</h4>
+                        <p class="text-muted">德意志帝國</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
+                <!-- Celebrity 6 -->
+                <div class="celebrity-item celebrity-item-6">
+                    <a href="#celebrityModal6" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/e/e8/David_Lloyd_George.jpg" class="img-responsive" alt="">
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
+                    <div class="celebrity-caption celebrity-caption-6">
+                        <h4>大衛·勞合·喬治<br>David Lloyd George</h4>
+                        <p class="text-muted">英國</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                <!-- Celebrity 7 -->
+                <div class="celebrity-item celebrity-item-7">
+                    <a href="#celebrityModal7" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                    </form>
+                        <img src="http://i.imgur.com/xGi6IJh.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="celebrity-caption celebrity-caption-7">
+                        <h4>列寧<br>V. Lenin</h4>
+                        <p class="text-muted">俄國</p>
+                    </div>
+                </div>
+                <!-- Celebrity 8 -->
+                <div class="celebrity-item celebrity-item-8">
+                    <a href="#celebrityModal8" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://i.imgur.com/9dq1YZS.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="celebrity-caption celebrity-caption-8">
+                        <h4>保羅·馮·興登堡<br>Paul von Hindenburg</h4>
+                        <p class="text-muted">德意志帝國</p>
+                    </div>
+                </div>
+                <!-- Celebrity 9 -->
+                <div class="celebrity-item celebrity-item-9">
+                    <a href="#celebrityModal9" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://i.imgur.com/lafv2ak.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="celebrity-caption celebrity-caption-9">
+                        <h4>赫伯特·基奇納<br>Horatio Herbert Kitchener</h4>
+                        <p class="text-muted">英國</p>
+                    </div>
+                </div>
+                <!-- Celebrity 10 -->
+                <div class="celebrity-item celebrity-item-10">
+                    <a href="#celebrityModal10" class="celebrity-link" data-toggle="modal">
+                        <div class="celebrity-hover">
+                            <div class="celebrity-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://public.media.smithsonianmag.com/legacy_blog/887_Erzherzog_Franz_Ferdinand_von_Oesterreich.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="celebrity-caption celebrity-caption-10">
+                        <h4>弗朗茨·斐迪南大公<br>Archduke Franz Ferdinand of Austria</h4>
+                        <p class="text-muted">奧匈帝國</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,11 +284,11 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Celebrity Modals -->
+    <!-- Use the modals below to showcase details about your celebrity projects! -->
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- celebrity Modal 1 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -259,30 +298,93 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <h2>伍德羅·威爾遜<br>Woodrow Wilson</h2>
+                            <p class="item-intro text-muted born-year">1856-1924</p>
+                            <p class="country">美國</p>
+                            <p class="appellation">美國第28任總統</p>
+                            <img class="img-responsive img-centered" src="http://upload.wikimedia.org/wikipedia/commons/4/4d/Woodrow_Wilson-H%26E.jpg" alt="">
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">美國美國政治家、總統。被認為是美國學術地位最高的總統，曾在一些大學任教，並於1902年出任普林斯頓帶學校長，寫有不少著作，是出任總統前在政界活動時間最短的美國總統。1909年當選紐澤西州州長。1912年作為民主黨候選人當選為美國第二十八任總統並獲得連任。1914年-1917年初，致力於保持美國的中立，1917年卻因為德國「無限制潛艇政策」與的國斷交，隨後參戰。於戰爭末期1918提出「十四點和平原則」，闡述他認為新世界避免戰火的新秩序。1919年參與「巴黎和會」，為該會議三巨頭之一，並籌建「國際聯盟」。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1912年</dt>
+                                <dd>威爾遜當選美國總統</dd>
+                                <dt>1916年</dt>
+                                <dd>以反戰的訴求再次當選總統。</dd>
+                                <dt>1917年以前</dt>
+                                <dd>以維持美國中立為主要政策</dd>
+                                <dt>1917年</dt>
+                                <dd>德國實施<a class="celebrity-link" href="#timelineModal51" data-toggle="modal">「無限制潛艇政策」</a>並慫恿中南美洲國家反美後，意識到對美國的威脅，對德國宣戰。</dd>
+                                <dt>1918年</dt>
+                                <dd>年初戰爭末期提出「十四點和平計畫」做為未來和平的建議。</dd>
+                                <dt>1919年</dt>
+                                <dd>巴黎和會中欲以「十四點和平計畫」實現他理想中的和平，但是被許多國家質疑，未能順利推行。雖然「十四點和平計畫」的推行不甚順遂，他仍於<a class="celebrity-link" href="#timelineModal75" data-toggle="modal">「凡爾賽條約」</a>中加入了創建國際聯盟的項目，並因此獲得諾貝爾和平獎。</dd>
+                            </dl>
+                            <div class="ref-links">
+                                <h3>其他參考連結</h3>
+                                <p>
+                                <a href="https://zh.wikipedia.org/wiki/%E4%BC%8D%E5%BE%B7%E7%BD%97%C2%B7%E5%A8%81%E5%B0%94%E9%80%8A" target="_blank">維基百科 - 威爾遜</a><br>
+                                <a href="http://www.twwiki.com/wiki/%E4%BC%8D%E5%BE%B7%E7%BE%85%C2%B7%E5%A8%81%E7%88%BE%E9%81%9C" target="_blank">台灣維基 - 威爾遜</a>
+                            
+                            </p>
+                            </div>
+                        </div>
+                        <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebrity Modal 2 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <h2>溫斯頓·邱吉爾<br>Winston Churchill</h2>
+                            <p class="item-intro text-muted born-year">1874-1964</p>
+                            <p class="country">英國</p>
+                            <p class="appellation">一戰期間：第一海軍大臣、軍需部長</p>
+                            <img class="img-responsive img-centered" src="http://theunion4ever.com/wp-content/uploads/2015/04/Winston-Churchill-2-2.jpg" alt="">
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">英國政治家、演說家、軍事家和作家，曾於1940年至1945年出任英國首相，任期內領導英國在第二次世界大戰中聯合美國等國家對抗德國，並取得了最終勝利，並自1951年至1955年再度出任英國首相。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1915年</dt>
+                                <dd>邱吉爾批准了海軍攻取達達尼爾海峽的計劃，卻無法攻下海峽，使得英軍優勢盡失，邱吉爾因而遭受到保守黨猛烈抨擊，隨後他也決定辭職。</dd>
+                                <dt>1917年7月</dt>
+                                <dd>邱吉爾被任命為軍需部長，重新返回政壇，更推行了對今後影響至深的政策（<a class="celebrity-link" href="#timelineModal47" data-toggle="modal">首次使用坦克</a>、化學毒器的應用），進而擴大了英國軍力。</dd>
+                            </dl>
+                            <h3>其他參考連結</h3>
                             <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <a href="https://zh.wikipedia.org/wiki/%E6%B8%A9%E6%96%AF%E9%A1%BF%C2%B7%E4%B8%98%E5%90%89%E5%B0%94#.E6.88.98.E6.97.B6.E9.A6.96.E7.9B.B8" target="_blank">維基百科 - 邱吉爾</a><br>
+                            <iframe  height="200" src="https://www.youtube.com/embed/pMz3dO4EqiM?list=PLB2vhKMBjSxMhAeYNstfBGyXcRN7o0TyF" frameborder="0" allowfullscreen></iframe>
+                            </p>
                         </div>
-                    </div>
+                        <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Celebrity Modal 3 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -292,50 +394,352 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>尼古拉二世<br>Tsar Nicholas II</h2>
+                            <p class="item-intro text-muted born-year">1868-1918</p>
+                            <p class="country">俄國</p>
+                            <p class="appellation">末代沙皇</p>
+                            <img class="img-responsive img-centered" src="http://cdn.history.com/sites/2/2013/12/emperor-nicholas-ii-of-russia.jpg" alt="">
                         </div>
-                    </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">1917年11月7日，十月革命後尼古拉二世家族被布爾什維克軍隊逮捕並被囚禁。1918年7月17日凌晨，尼古拉二世家族被布爾什維克秘密警察趕到地下室，使用手槍集體處決。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1914年</dt>
+                                <dd>尼古拉二世<a class="celebrity-link" href="#timelineModal20" data-toggle="modal">帶領俄國加入第一次世界大戰</a>，但由於戰況不利、糧食困難等原因，激起人民的不滿，進而發起革命。</dd>
+                                <dt>1917年3月15日</dt>
+                                <dd>沙皇退位，弟弟米哈伊爾·亞歷山德羅維奇大公拒絕繼承，於是羅曼諾夫王朝滅亡。</dd>
+                            </dl>
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="https://zh.wikipedia.org/wiki/%E5%B0%BC%E5%8F%A4%E6%8B%89%E4%BA%8C%E4%B8%96_(%E4%BF%84%E7%BD%97%E6%96%AF)" target="_blank">維基百科 - 尼古拉二世</a><br>
+                            <iframe height="200" src="https://www.youtube.com/embed/2OnTLEYbkds?list=PLB2vhKMBjSxMhAeYNstfBGyXcRN7o0TyF" frameborder="0" allowfullscreen></iframe>    
+                            </p>
+                        </div>
+                        <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Celebrity Modal 4 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>喬治·克里蒙梭<br>Georges Clemenceau</h2>
+                            <p class="item-intro text-muted born-year">1841-1929</p>
+                            <p class="country">法國</p>
+                            <p class="appellation">總理</p>
+                            <img class="img-responsive img-centered" src="http://www.larousse.fr/encyclopedie/data/images/1313133-Georges_Clemenceau.jpg" alt="">
+                       
+                            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">法國政治家、新聞工作者。原為醫生，後成為激進共和派領袖。1902年-1920年擔任參議員，1906年擔任內政部長，同年繼任總理直到1909年。1911年重返參議院，擔任外交和陸軍委員會委員。1917年-1920年再次擔任總理，行事獨斷激進。戰爭勝利後贏得「法蘭西之虎」、「勝利之父」的稱號。1919年巴黎和會同美國總統威爾遜、英國首相勞合‧喬治為該會議的三巨頭，主張嚴懲德國；戰後簽《凡爾賽條約》。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1911年</dt>
+                                <dd>擔任外交和陸軍委員會委員，他確信德國人要發動戰爭，重視國防軍需。</dd>
+                                <dt>1917年</dt>
+                                <dd>受命組織戰時內閣，親自兼任國防部長，鼓吹擴大軍火生產和招集人力，千方百計爭取勝利。</dd>
+                                <dt>1919年</dt>
+                                <dd><a class="celebrity-link" href="#timelineModal65" data-toggle="modal">「巴黎和會」</a>時主張瓜分德國殖民地和部分國土，並且賠償全部戰爭損失。由於英、美的反對不得度做出一些讓步，但最後仍有部分地滿足法國的要求。</dd> 
+                            </dl>
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="http://www.twwiki.com/wiki/%E5%96%AC%E6%B2%BB%C2%B7%E5%85%8B%E5%88%97%E5%AD%9F%E6%A2%AD" target="_blank">台灣維基 - 喬治·克里蒙梭</a><br>
+                            </p>   
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebrity Modal 5 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>威廉二世<br>Kaiser Wilhelm II</h2>
+                            <p class="item-intro text-muted born-year">1859-1941</p>
+                            <p class="country">德意志帝國</p>
+                            <p class="appellation">末代德意志皇帝、末代普魯士國王</p>
+                            <img class="img-responsive img-centered" src="http://upload.wikimedia.org/wikipedia/commons/6/6e/Kaiser_Wilhelm_II_of_Germany_-_1902.jpg" alt="">
+
+                            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">德意志帝國的末代皇帝，即位後將德意志帝國的外交政策轉為激進的帝國主義，並期望德意志帝國成為歐洲的主要勢力。1914年塞拉耶佛事件後，向俄國宣戰。戰爭期間不受到屬下軍官的信任，因而沒有直接主導戰爭去向。1918年柏林發生革命，威廉二世被迫退位，逃至荷蘭。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1897年及1900年</dt>
+                                <dd>通過德國新海軍方案擴張海軍，藉此趕上英國海軍力量。</dd>
+                                <dt>1914年</dt>
+                                <dd>塞城事件後企圖說服奧匈帝國和平解決事件，無奈奧匈帝國已經向塞爾維亞宣戰；俄國開始總動員，出兵協助塞爾維亞，遂<a class="celebrity-link" href="#timelineModal21" data-toggle="modal">向俄國開戰</a>。戰爭爆發後，軍事權力逐漸遭架空，1916年後形同魁儡。</dd>
+                                <dt>1918年</dt>
+                                <dd>由於人民不滿，爆發德國革命，德國投降，威廉二世被迫退位。</dd>
+                            </dl> 
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="https://zh.wikipedia.org/wiki/%E5%A8%81%E5%BB%89%E4%BA%8C%E4%B8%96_(%E5%BE%B7%E5%9B%BD)" target="_blank">維基百科 - 威廉二世</a><br>
+                            <iframe height="200" src="https://www.youtube.com/embed/EKe8WYiHCao?list=PLB2vhKMBjSxMhAeYNstfBGyXcRN7o0TyF" frameborder="0" allowfullscreen></iframe>
+                            </p>  
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebrity Modal 6 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>大衛·勞合·喬治<br>David Lloyd George</h2>
+                            <p class="item-intro text-muted born-year">1863-1945</p>
+                            <p class="country">英國</p>
+                            <p class="appellation">首相</p>
+                            <img class="img-responsive img-centered" src="http://upload.wikimedia.org/wikipedia/commons/e/e8/David_Lloyd_George.jpg" alt="">
+
+                            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">英國自由黨領袖。1890年當選為英國下議院議員。1911年任財政大臣期間提出國民保險法，被公認為英國福利國家的先聲。第一次世界大戰期間任軍需大臣、陸軍大臣等職。1916年出任首相，對內擴大政府對經濟的控制。1919年他出席並操縱巴黎和會，是巴黎和會「三巨頭」之一，簽署了《凡爾賽和約》。1921年給愛爾蘭以自治領地位。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1915年</dt>
+                                <dd>成立第一次聯合政府，為解決軍火問題，成立軍務部，任命勞合‧喬治負責，軍火生產大幅度增長。</dd>
+                                <dt>1917年</dt>
+                                <dd>成立「戰爭政策委員會」解決戰時問題。</dd>
+                                <dt>1919年</dt>
+                                <dd>在<a class="celebrity-link" href="#timelineModal65" data-toggle="modal">「巴黎和會」</a>上主張審判威廉二世、主張德國賠償所有戰時損失，並致力保衛英國海上勢力。</dd>
+                            </dl>
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%A1%9B%C2%B7%E5%8B%9E%E5%90%88%C2%B7%E5%96%AC%E6%B2%BB" target="_blank">維基百科 - 大衛·勞合·喬治</a><br>
+                            <a href="http://www.twwiki.com/wiki/%E5%8B%9E%E5%90%88%C2%B7%E5%96%AC%E6%B2%BB#4_11" target="_blank">台灣維基 - 大衛·勞合·喬治</a>                            
+                            </p> 
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebrity Modal 7 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>列寧<br>V. Lenin</h2>
+                            <p class="item-intro text-muted born-year">1870-1924</p>
+                            <p class="country">俄國</p>
+                            <p class="appellation">共產黨（布爾什維克）創立者、蘇聯第一位最高領導人</p>
+                            <img class="img-responsive img-centered" src="http://i.imgur.com/xGi6IJh.jpg" alt="">
+                            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">俄國共產黨（布爾什維克）的創立者，為蘇聯的主要建立者和第一位最高領導人，首任蘇聯人民委員會主席（政府總理）。列寧是他參加共產主義運動後的化名，他發展了馬克思主義，形成了列寧主義理論，馬克思列寧主義者稱他為「全世界無產階級和勞動人民的偉大導師和領袖」。他是20世紀最有影響力和評價最具爭議的人物之一。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1917年</dt>
+                                <dd>經德皇威廉二世的協助下，列寧從瑞士穿過德國領土，經芬蘭回國，讓其發動革命。</dd>
+                                <dt>1917年</dt>
+                                <dd>俄國革命的主要領導者。</dd>
+                                <dt>1918年3月3日</dt>
+                                <dd>與德國簽署《布列斯特和約》，<a class="celebrity-link" href="#timelineModal58" data-toggle="modal">俄國正式退出第一次世界大戰</a>。</dd>
+                                <dt>1918年9月</dt>
+                                <dd>列寧公開聲稱要製造一場針對資產階級反革命的「紅色恐怖」，給社會製造了極大的恐慌，被當時的政治家稱為「恐怖統治」。</dd>
+                            </dl>
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="https://zh.wikipedia.org/wiki/%E5%88%97%E5%AE%81#1917.E5.B9.B4.E4.BF.84.E5.9B.BD.E9.9D.A9.E5.91.BD" target="_blank">維基百科 - 列寧</a>                            
+                            </p> 
+   
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebrity Modal 8 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>保羅·馮·興登堡<br>Paul von Hindenburg</h2>
+                            <p class="item-intro text-muted born-year">1847-1934</p>
+                            <p class="country">德意志帝國</p>
+                            <p class="appellation">陸軍元帥</p>
+                            <img class="img-responsive img-centered" src="http://i.imgur.com/9dq1YZS.jpg" alt="">
+
+                            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">興登堡出生於軍官家庭，是一位德國陸軍元帥與政治家。1866年，以中尉的軍階參加普奧戰爭。1870年，以軍官身份參加普法戰爭。1903年，晉升為上將，1911年退休。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1914年</dt>
+                                <dd>領導德軍於<a class="celebrity-link" href="#timelineModal27" data-toggle="modal">「坦能堡會戰」</a>中擊敗俄羅斯軍隊。</dd>
+                            </dl>
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E7%BD%97%C2%B7%E5%86%AF%C2%B7%E5%85%B4%E7%99%BB%E5%A0%A1#.E9.AD.8F.E7.8E.9B.E5.85.B1.E5.92.8C.E5.9B.BD.E6.80.BB.E7.BB.9F" target="_blank">維基百科 - 保羅·馮·興登堡</a>
+                            <br>
+                            <iframe width="375" height="250" src="https://www.youtube.com/embed/kmkaHuTvkNA" frameborder="0" allowfullscreen></iframe>
+                            </p> 
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebrity Modal 9 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>赫伯特·基奇納<br>Horatio Herbert Kitchener</h2>
+                            <p class="item-intro text-muted born-year">1850-1916</p>
+                            <p class="country">英國</p>
+                            <p class="appellation">陸軍大臣（英國史上最具影響力的名將之一）</p>
+                            <img class="img-responsive img-centered" src="http://i.imgur.com/lafv2ak.jpg" alt="">
+
+                            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">基奇納性格殘酷無情、傲慢自負，卻是個管理天才，著名的事蹟有1896年鎮壓了蘇丹起義以及1900年結束布爾戰爭，是英國史上最具影響力的名將之一。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1914年</dt>
+                                <dd>擔任陸軍大臣，未經內閣同意招募大批志願兵，迅速使英軍擴充了300萬人力。</dd>
+                            </dl>
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="http://www.zhige.net/html/2014/0714/80185.html" target="_blank">維基百科 - 加里波利之戰</a><br>
+                            <a href="http://baike.baidu.com/view/2068226.htm" target="_blank">Baidu百科 - 赫伯特·基奇納</a>
+                            </p> 
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebrity Modal 10 -->
+    <div class="portfolio-modal modal fade" id="celebrityModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-8 col-lg-offset-2"> -->
+                        <div class="col-lg-4 modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>弗朗茨·斐迪南大公<br>Franz Ferdinand of Austria</h2>
+                            <p class="item-intro text-muted born-year">1863-1914</p>
+                            <p class="country">奧匈帝國</p>
+                            <p class="appellation">皇位繼承人</p>
+                            <img class="img-responsive img-centered" src="http://public.media.smithsonianmag.com/legacy_blog/887_Erzherzog_Franz_Ferdinand_von_Oesterreich.jpg" alt="">
+
+                            <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Celebrity</button> -->
+                        </div>
+                        <div class="col-lg-7">
+                            <h3>簡介</h3>
+                            <p class="brief-intro">奧匈帝國皇儲，皇帝獨子皇太子魯道夫於1889年精神病自殺後成為皇位繼承人。主張通過兼並塞爾維亞王國將奥匈帝國由奥地利、匈牙利組成的二元帝國擴展為由奥地利、匈牙利與南斯拉夫組成的三元帝國。1914年視察塞爾維亞首都賽拉耶佛時遇刺身亡。</p>
+                            <h3>一戰間代表事件</h3>
+                            <dl class="dl-horizontal achievement">
+                                <dt>1914年6月28日</dt>
+                                <dd>於塞爾維亞首都賽拉耶佛遭激進民族主義者<a class="celebrity-link" href="#timelineModal18" data-toggle="modal">刺殺身亡</a>，間接成為第一次世界大戰的導火線。</dd>
+                            </dl>
+                            <h3>其他參考連結</h3>
+                            <p>
+                            <a href="https://en.wikipedia.org/wiki/Archduke_Franz_Ferdinand_of_Austria">維基百科 - 弗朗茨·斐迪南大公</a><br>
+                            <a href="http://www.twwiki.com/wiki/%E5%BC%97%E6%9C%97%E8%8C%A8%C2%B7%E6%96%90%E8%BF%AA%E5%8D%97%E5%A4%A7%E5%85%AC" target="_blank">台灣維基 - 弗朗茨·斐迪南大公</a><br>
+                            <iframe height="200" src="https://www.youtube.com/embed/vGO407N4lmg?list=PLB2vhKMBjSxMhAeYNstfBGyXcRN7o0TyF" frameborder="0" allowfullscreen></iframe>
+                            </p> 
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Event Modal 51  -->
+    <div class="portfolio-modal modal fade portfolio-modal-event" id="timelineModal51" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -347,22 +751,18 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>德國無限制潛艇戰</h2>
+                            <img class="img-responsive img-centered" src="img/timeline/HaiShang2.jpg" alt="">
+                            <p>第一次世界大戰中，<a href="http://zh.wikipedia.org/wiki/%E7%84%A1%E9%99%90%E5%88%B6%E6%BD%9B%E8%89%87%E6%88%B0 / http://www.storm.mg/article/33894" class="out-link">德國對英國實施的海上封鎖</a>。英國是一個島國，亦需要其他國家的物資援助。在此次封鎖中，不論任何船隻，只要向英國方向行駛，且不管是前往英國還是經過，一律以潛艇擊沉，當中有不少無辜甚至德國船隻被擊沉。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Event Modal 75  -->
+    <div class="portfolio-modal modal fade" id="timelineModal75" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -374,22 +774,18 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>國際聯盟</h2>
+                            <img class="img-responsive img-centered" src="img/timeline/GuoJiLianMeng.jpg" alt="">
+                            <p><a href="https://zh.wikipedia.org/wiki/%E5%9C%8B%E9%9A%9B%E8%81%AF%E7%9B%9F" class="out-link">國際聯盟</a>是《凡爾賽條約》簽訂後組成的國際組織，宗旨是減少武器數量、平息國際糾紛及維持民眾的生活水平。不過國聯缺乏軍隊武力，所以要依賴大國援助，尤其是在制裁某些國家的時候。然而，國聯缺乏執行決議的強制力，未能發揮其應有力作用</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Event Modal 47  -->
+    <div class="portfolio-modal modal fade" id="timelineModal47" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -401,20 +797,156 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>戰事僵持</h2>
+                            <img class="img-responsive img-centered" src="img/timeline/JiangChi4.jpg" alt="">
+                            <p>而英法聯軍為了制衡德軍，在該年7月初向索姆河一線與德軍爆發索姆河戰役，戰況更為慘烈。英軍雖然在這場戰爭裡首次使用坦克，但雙方在傷亡共約120萬人後，戰事仍未有重大突破，並持續至該年11月，西線再次變為膠著對峙狀態，不過協約國開始掌握戰爭的主動權。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+        <!-- Event Modal 20  -->
+    <div class="portfolio-modal modal fade" id="timelineModal20" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>俄國動員</h2>
+                            <h3>1914/7/30</h3>
+                            <img class="img-responsive img-centered" src="img/timeline/ErGuoDongYuan1.jpg" alt="">
+                            <p>奧匈因為德國向其開出空白支票，因此自信心大增，與塞爾維亞斷交並對其宣戰。俄國則宣布全國總動員，以支援塞爾維亞與奧匈戰鬥，這引起德國的不滿（而兩國的惡性關係也埋下了伏線）。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Event Modal 65  -->
+    <div class="portfolio-modal modal fade" id="timelineModal65" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>巴黎和會</h2>
+                            <h3>1919/1/18</h3>
+                            <img class="img-responsive img-centered" src="img/timeline/BaLiHeHui.jpg" alt="">
+                            <p>這個<a href="http://zh.wikipedia.org/wiki/巴黎和会_(1919年)" class="out-link">和會</a>因為戰敗國和中立國均未獲邀請參加，所以這是勝利國舉行的和會，是個大國操縱的和會。分別由美國總统威爾遜、英國首相勞合·喬治、法國總理克里蒙梭主導了和會的進行。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Event Modal 21  -->
+    <div class="portfolio-modal modal fade" id="timelineModal21" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>俄國動員</h2>
+                            <img class="img-responsive img-centered" src="img/timeline/ErGuoDongYuan2.jpg" alt="">
+                            <p>德國以俄國拒絕停止全國總動員為藉口向俄國宣戰，並同時在西線進侵比利時。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Event Modal 58  -->
+    <div class="portfolio-modal modal fade" id="timelineModal58" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>俄國退出</h2>
+                            <img class="img-responsive img-centered" src="img/timeline/ErGuoTuiChu.jpg" alt="">
+                            <p>布爾什維克領袖列寧承諾再次舉行全國大選, 並領導了一場武裝起義，推翻了臨時政府，然後在大選失利之後, 使用暴力手段強行建立了蘇維埃政府和第一個社會主義國家。列寧其後與德國簽署《布列斯特-立陶夫斯克條約》，並宣布退出第一次世界大戰。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Event Modal 27  -->
+    <div class="portfolio-modal modal fade" id="timelineModal27" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>俄國動員</h2>
+                            <img class="img-responsive img-centered" src="img/timeline/ErGuoDongYuan2.jpg" alt="">
+                            <p>1914年8月17日，俄羅斯成功侵入東普魯士，直到德國於8/20反擊，設計了陷阱迫使俄國再9/2放棄了任務。雖然德軍在<a href="https://zh.wikipedia.org/zh-tw/%E5%9D%A6%E8%83%BD%E5%A0%A1%E6%88%B0%E5%BD%B9_(1914%E5%B9%B4)" class="out-link">坦能堡會戰</a>得勝，但德軍原先並沒有料到俄羅斯會在8月中開戰，因此德軍用了兩支部隊來抵抗俄軍，造成德軍的資源被分散，而影響在西線對英法聯軍的戰事。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Event Modal 18  -->
+    <div class="portfolio-modal modal fade" id="timelineModal18" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>塞拉耶佛暗殺事件</h2>
+                            <img class="img-responsive img-centered" src="img/timeline/SaiLaYeFuo.jpg" alt="">
+                            <p>塞爾維亞原先可得到通往亞德里亞海的海岸線，但由於奧匈不希望它實力大增，威脅其多民族帝國之安全，遂在會議上鼓吹在該處建立一獨立國家，阿爾巴尼亞因而立國。但奧塞兩國之間的嫌隙卻因此事而擴大，以致巴爾幹同盟出現分裂。<br><br>1914年6月28日，此日為塞爾維亞之國慶日。奧匈帝國皇太子費迪南大公夫婦在塞拉耶佛視察時，被塞爾維亞青年加夫里若·普林西普（一名參加塞爾維亞恐怖組織「黑手黨」的波士尼亞學生）槍殺。奧匈帝國發出通牒要求塞爾維亞嚴懲元兇而塞方沒有這麼做，在得到德國的支援後，於1914年7月28日<a href="http://zh.wikipedia.org/zh-tw/萨拉热窝事件" class="out-link">出兵塞爾維亞</a>。這件事成為第一次世界大戰的導火線。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 

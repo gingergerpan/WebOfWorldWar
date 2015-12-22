@@ -26,6 +26,7 @@ p.large {
     font-size: 16px;
 }
 
+
 a,
 a:hover,
 a:focus,
@@ -36,6 +37,10 @@ a.active {
 
 a {
     color: #fed136;
+}
+
+a.out-link {
+  color: #0000FF;
 }
 
 a:hover,
@@ -61,7 +66,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
 }
 
 .bg-darkest-gray {
@@ -321,7 +326,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 100px 0; 
 }
 
 section h2.section-heading {
@@ -345,24 +350,93 @@ section h3.section-subheading {
     }
 }
 
+/*div.home-page-background {
+}*/
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+.celebrity-map {
+    position:relative;
+    /*background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Map_Europe_alliances_1914-en.svg/800px-Map_Europe_alliances_1914-en.svg.png)*/
+    /*no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+}
+.europe-map img {
+    width:100%;
+}
+
+div.celebrity-item {
+    width:8%;  
+}
+
+div.celebrity-item-1 {
+    left:10%;
+    top:15%;
+}
+
+div.celebrity-item-2 {
+    left:30%;
+    top:3.5%;
+}
+
+div.celebrity-item-3 {
+    left:76%;
+    top:15%;
+}
+
+div.celebrity-item-4 {
+    left:41%;
+    top:53%;
+}
+
+div.celebrity-item-5 {
+    left:49%;
+    top:25%;
+}
+
+div.celebrity-item-6 {
+    left:39%;
+    top:10%;
+}
+
+div.celebrity-item-7 {
+    left:85%;
+    top:15%;
+}
+
+div.celebrity-item-8 {
+    left:58%;
+    top:25%;
+}
+
+div.celebrity-item-9 {
+    left:30%;
+    top:20%;
+}
+
+div.celebrity-item-10 {
+    left:65%;
+    top:45%;
+}
+
+#celebrity .celebrity-item {
+    position:absolute;
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#celebrity .celebrity-item .celebrity-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#celebrity .celebrity-item .celebrity-link .celebrity-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -373,11 +447,24 @@ section h3.section-subheading {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+div.core-obj a img {
+    opacity: 0.8;
+}
+
+div.core-obj a img:hover {
+    opacity: 1;
+    background: rgba(254,209,54,.9);
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;    
+}
+
+
+#celebrity .celebrity-item .celebrity-link .celebrity-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#celebrity .celebrity-item .celebrity-link .celebrity-hover .celebrity-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -388,41 +475,55 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#celebrity .celebrity-item .celebrity-link .celebrity-hover .celebrity-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#celebrity .celebrity-item .celebrity-link .celebrity-hover .celebrity-hover-content h3,
+#celebrity .celebrity-item .celebrity-link .celebrity-hover .celebrity-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+/*div.celebrity-caption {
+    width:300px;
+    z-index:2000;
+}*/
+
+#celebrity .celebrity-item .celebrity-caption {
+    display:none;
+    position:relative;
     margin: 0 auto;
     padding: 25px;
-    max-width: 400px;
+/*    max-width: 400px;*/
     text-align: center;
     background-color: #fff;
+    width:300px;
+    z-index: 100;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#celebrity .celebrity-item .celebrity-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#celebrity .celebrity-item .celebrity-caption p {
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
-#portfolio * {
+/*#celebrity * {
     z-index: 2;
+}*/
+
+
+dl.dl-horizontal {
+    text-align: left;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #celebrity .celebrity-item {
         margin: 0 0 30px;
     }
 }
@@ -635,7 +736,7 @@ section h3.section-subheading {
 .core-obj img {
     margin: 0 auto;
     border: 7px solid #fff;
-    width: 80%; 
+    width: 80%;
 }
 
 .core-obj h4 {
@@ -651,6 +752,19 @@ section h3.section-subheading {
 aside.clients img {
     margin: 50px auto;
 }
+section#home,
+section#celebrity {
+    /*background-color: #222;*/
+    background-image: url(../img/37231_world_war_1-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background: rgba(0,0,0,0.7);*/
+}
+
+section#home {
+    padding-top: 100px;
+}
+
 
 section#contact {
     background-color: #222;
@@ -658,6 +772,8 @@ section#contact {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
 
 section#contact .section-heading {
     color: #fff;
@@ -768,13 +884,17 @@ ul.social-buttons li a:active {
 .btn:active:focus {
     outline: 0;
 }
+/*.portfolio-modal-event {
+    position:relative;
+    z-index:2000;
+}*/
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
+    padding: 50px 0;
+    min-height:100%;
     border: 0;
     border-radius: 0;
-    text-align: center;
+    /*text-align: left;*/
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -782,15 +902,16 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
+    margin-top:0px;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content p {
+/*.portfolio-modal .modal-content p {
     margin-bottom: 30px;
-}
+}*/
 
 .portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
+    margin: 0px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
@@ -843,6 +964,17 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.modal-body img {
+    height:300px;
+}
+
+.born-year,
+.country,
+.appellation,
+.ref-links {
+    text-align: center;
 }
 
 ::-moz-selection {
